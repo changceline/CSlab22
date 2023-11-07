@@ -20,8 +20,18 @@ int main(){
     return 0;
 }
 
-void median (int answer[]{ //answer 是傳位置
+void median (int answer[]){ //answer 是傳位置
     printf("\n%s\n%s\n%s\n%s","********", " Median", "********", "The unsorted array of responses is" );
     printArray(answer);
     printf("\n\nThe median is element %d of\n" "the sorted %d element array.\n" "For this run the median is %d\n\n", SIZE / 2, SIZE,answer[SIZE/2]);
-}//寫到81休息
+}
+void printArray( const int a[]){
+    int j;
+    for(j=0; j<SIZE;j++){
+        if( j%20 == 0){
+            printf("\n");
+        }
+       printf("%2d",a[j]); 
+    }
+    
+}
