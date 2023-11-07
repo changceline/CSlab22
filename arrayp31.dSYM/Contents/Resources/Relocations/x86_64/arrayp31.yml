@@ -1,9 +1,0 @@
----
-triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/celinec/CSlab22/arrayp31'
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003BF0, symSize: 0x80 }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003BF0, symSize: 0x80 }
-  - { offsetInCU: 0x78, offset: 0x78, size: 0x8, addend: 0x0, symName: _median, symObjAddr: 0x80, symBinAddr: 0x100003C70, symSize: 0x70 }
-  - { offsetInCU: 0x9C, offset: 0x9C, size: 0x8, addend: 0x0, symName: _printArray, symObjAddr: 0xF0, symBinAddr: 0x100003CE0, symSize: 0x6C }
-...
