@@ -4,6 +4,7 @@
 void bubbleSort(int a[]);
 void median(int answer[]);
 void printArray(const int a[]);
+
 int main(){
     int frequency[10] = {0};
     int response[ SIZE ] = { 6,7,8,9,8,7, 8, 9, 8, 9,
@@ -21,14 +22,19 @@ int main(){
 }
 
 void median (int answer[]){ //answer 是傳位置
-    printf("\n%s\n%s\n%s\n%s","********", " Median", "********", "The unsorted array of responses is" );
+    printf("\n%s\n%s\n%s\n%s","********", " Median", "********", "The unsorted array of responses is" );//輸出初始陣列
     printArray(answer);
+    bubbleSort( answer); //傳陣列位置
+    printf("\n\nThe sorted array is");
+    printArray(answer);
+    //傳陣列中間那個
     printf("\n\nThe median is element %d of\n" "the sorted %d element array.\n" "For this run the median is %d\n\n", SIZE / 2, SIZE,answer[SIZE/2]);
 }
+
 void printArray( const int a[]){
     int j;
     for(j=0; j<SIZE;j++){
-        if( j%20 == 0){
+        if( j%20 == 0){ //輸出變好看而已
             printf("\n");
         }
        printf("%2d",a[j]); 
