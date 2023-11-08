@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define SIZE 99
 
-void mean(const int answer[]);
+void bubbleSort(int a[]);
 void median(int answer[]);
 void printArray(const int a[]);
 int main(){
@@ -34,4 +34,23 @@ void printArray( const int a[]){
        printf("%2d",a[j]); 
     }
     
+}
+
+void bubbleSort( int a[] ) {
+
+    int pass; 
+    int j;
+    int hold; 
+
+    for(pass=1;pass<SIZE;pass++){ /* loop to control number of comparisons per pass */
+        for ( j = 0; j < SIZE - 1; j++ ) {
+       
+            if ( a[ j ] > a[ j + 1 ] ) {
+            hold = a[ j ];
+            a[ j ] = a[ j + 1 ];
+            a[ j + 1 ] = hold;
+            } 
+
+        }
+    }
 }
